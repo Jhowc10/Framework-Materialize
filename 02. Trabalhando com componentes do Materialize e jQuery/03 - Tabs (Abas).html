@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs (Abas)</title>
+
+    <!-- Importação Fonte Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Importação materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen, projection"> <!--Media siguinifica a midia que vai rodar-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen, projection">     <!--screen = Celular / projection = Projetor-->
+                                                                                                                   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação da biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function (){
+            $('ul.tabs').tabs();
+        });
+        
+    </script>
+
+</head>
+
+<body>
+    <!-- Importação materialize JS na tag body, carrega mais rápido -->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <div class="container">
+        <h1>Nossos Produtos</h1>
+        
+        <div class="row">
+
+            <div class="col s12"> <!--Inicio de uma coluna tamanho 12-->
+                <ul class="tabs"> <!--Inicio da tabela-->
+                    <li class="tab col s3"><a class="active" href="#eletronicos">Eletrônicos</a></li>
+                    <li class="tab col s3">                       <a href="#cozinha">Cozinha</a></li>
+                    <li class="tab col s3 disabled">                  <a href="#games">Games</a></li>
+                    <li class="tab col s3">                         <a href="#musica">Música</a></li>
+                </ul> <!--Fim da tabela-->
+            </div> <!--Fim da coluna-->
+
+            <div id="eletronicos" class="col s12">Você está em eletrônicos</div>
+            <div id="cozinha"     class="col s12">    Você está em cozinha</div>
+            <div id="games"       class="col s12">       Item desabilitado</div>
+            <div id="musica"      class="col s12">     Você está em música</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

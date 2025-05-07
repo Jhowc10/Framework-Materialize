@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina utilizando o materialize</title>
+
+    <!-- Importação Fonte Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Importação materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen, projection"> <!--Media siguinifica a midia que vai rodar-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen, projection">                                <!--screen = Celular / projection = Projetor-->
+    
+</head>
+<body>
+    <!-- Importação materialize JS na tag body, carrega mais rápido -->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+
+    <nav class="light-blue lighten-1" role="navigation"> <!--Criação de uma barra de navegação-->
+
+        <div class="nav-wrapper container"> <!--Criação do container-->
+
+            <a id="nav-wrapper container" href="#" class="brand-logo header center">Logo</a> <!--Criação de um logo-->
+
+            <ul class="right hide-on-med-and-down"> <!--comando para criar links na direita do site-->
+            <li><a href="#">Sobre</a></li> 
+            <li><a href="#">Login</a></li>
+
+        </ul> <!--Fim da criação de links-->
+
+        <ul id="nav" class="side-nav"> <!--Diz que eu vou criar links na parte esquerda do site-->
+            <li><a href="#">Navbar Link</a></li>
+        </ul> <!--Fim da criação-->
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> <!--Criação de um menu-->
+
+         </div> <!-- Fim do container-->
+
+    </nav> <!--fim da barra de navegação-->
+
+    <div class="section no-pad-bot" id="index-banner"> <!--Bloco, meio do site-->
+
+        <div class="container"> <!--Um segundo container-->
+
+            <br><br>
+            <h1 class="header center orange-text">Exemplo com Materialize</h1>
+
+            <div class="row center">
+                <h5 class="header col s12 light">Um <em>framework</em> moderno e totalmente responsivo</h5>
+            </div> 
+
+            <div class="row center"> <!--div para o botão-->
+                <!-- Criação de um botão com que direciona a um link -->
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Exemplo de botão</a> 
+            </div>
+            <br><br>
+
+        </div> <!--Fim do container-->
+    </div> <!--fim do bloco-->
+
+    <div class="container"> <!-- Container principal -->
+        <div class="section">
+
+            <div class="row"> <!-- Icone Section -->
+                <div class="col s12 m4"> <!--Criação de uma coluna-->
+                    <div class="icon-blok">
+                    <h2 class="center light-blue-text"><i class="material-icone">flash_on</i></h2>
+                    <h5 class="center">Rápido Desenvolvimento</h5>
+                    <p class="light">Sed mauris elit, eleifend eget ullamcorper suscipit, tincidunt in ex. Phasellus laoreet sed ex nec porta. Duis facilisis, dolor a elementum pellentesque, risus sapien pharetra orci, et mattis sem turpis quis est. Vivamus gravida suscipit efficitur. Integer ornare sapien id tortor iaculis, et ornare nisi.</p>
+                    </p>
+                    </div>
+                </div> <!--Fim da coluna-->
+
+                <div class="col s12 m4">
+                    <div class="icon-block"> <!--Criação de um pequeno bloco--> 
+                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Focado no usuário</h5>
+                        <p class="light">Nulla facilisi. In ex felis, dignissim at ultrices rutrum, porttitor sit amet dui. Mauris eu fringilla lacus, in tempus arcu. Curabitur non nisl ut turpis mattis gravida at id arcu. Cras commodo urna in urna vehicula porttitor. Fusce dictum dictum aliquet. Nullam non lacus sapien.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icon">settings</i></h2>
+                        <h5 class="center">Fácil de trabalhar</h5>
+                        <p class="light"></p>Sed mauris elit, eleifend eget ullamcorper suscipit, tincidunt in ex. Phasellus laoreet sed ex nec porta. Duis facilisis, dolor a elementum pellentesque, risus sapien pharetra orci, et mattis sem turpis quis est. Vivamus gravida suscipit efficitur. Integer ornare sapien id tortor iaculis, et ornare nisi.</p>
+                   </div>
+
+                </div>
+               
+            </div> <!--Fim da section-->
+
+        </div> <!--Fim da section-->  
+
+        </div>
+
+    </div> <!--Fim do container principal-->
+
+    <div class="section"></div>
+
+    <footer class="page-footer orange">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col s12 m6 ">
+                    <h5 class="white-text">Sobre a empresa</h5>
+                    <p class="grey-text text-lighten-4">WSed tincidunt convallis quam. Ut consequat aliquam dui. Fusce ullamcorper eu nulla nec efficitur. Vestibulum auctor facilisis orci vel laoreet. Fusce arcu sapien, placerat eu lobortis ac, interdum in elit. Suspendisse potenti. Cras sollicitudin ipsum rhoncus tristique egestas. Ut non eleifend neque. Vestibulum a tortor.
+                    </p>
+                   
+                </div>
+       
+
+            <div class="col s12 m4 ">
+                <h5 class="white-text">Redes Sociais</h5> 
+            
+            <ul> <!--ul para criar links-->
+                <li><a class="white-text" href="#!">Facebook</a></li>
+                <li><a class="white-text" href="#!">Twitter</a></li>
+                <li><a class="white-text" href="#!">Linkedin</a></li>
+            </ul> <!--Fim da ul-->
+
+            </div> <!--Fim da class row-->
+
+            <div class="col s12 m2">
+                <h5 class="white-text">Contato</h5>
+
+                <ul>
+                    <li><a class="while-text" href="#!">+55 11 5555-5554</a></li>
+                    <li><a class="while-text" href="#!">+55 11 5555-5559</a></li>
+                    <li><a class="while-text" href="#!">empresa@email.com</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        </div> <!--Fim da container-->
+
+        <div class="footer-copyrigth">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> 
+            </div>
+
+        </div>
+
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe row - Colunas verticais</title>
+
+    <!-- Importação Fonte Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Importação materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen, projection"> <!--Media siguinifica a midia que vai rodar-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen, projection">                                <!--screen = Celular / projection = Projetor-->
+    <!-- Otimização para mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <!-- Importação materialize JS na tag body, carrega mais rápido -->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+
+    <h2>Classe row - Colunas verticais</h2>
+
+    <div class="container">              <!--Criação de um container-->
+        <div class="row">                <!--criação da linha-->
+            <div class="col s1">1</div>  <!--Criação das colunas-->
+            <div class="col s1">2</div>
+            <div class="col s1">3</div>
+            <div class="col s1">4</div>
+            <div class="col s1">5</div>
+            <div class="col s1">5</div>
+            <div class="col s1">7</div>
+            <div class="col s1">8</div>
+            <div class="col s1">9</div>
+            <div class="col s1">10</div>
+            <div class="col s1">11</div>
+            <div class="col s1">12</div>
+        </div>
+    </div>
+    <br>
+
+    <h3>Criação da primeira linha de colunas</h3>
+
+    <div class="container">
+        <div class="row card-panel teal lighten-1"> <!--Criando a coluna com cor / Onde esta teal é a cor / lighten é a tonalidade, mais clara ou mais escura-->
+            <div class="col s1 center">1</div>      <!--card-panel é a criação de um painel-->
+            <div class="col s1 center">2</div>
+            <div class="col s1 center">3</div>
+            <div class="col s1 center">4</div>
+            <div class="col s1 center">5</div>
+            <div class="col s1 center">6</div>
+            <div class="col s1 center">7</div>
+            <div class="col s1 center">8</div>
+            <div class="col s1 center">9</div>
+            <div class="col s1 center">10</div>
+            <div class="col s1 center">11</div>
+            <div class="col s1 center">12</div>
+        </div>
+        <br>
+   
+
+    <h5>Criação da segunda linha com coluna 8 colunas</h4>
+    <div class="row card-panel teal leghten 5">
+        <div class="col s8 center">1</div>
+        <div class="col s4 center">2</div>        
+    </div>
+    <br>
+
+    <h5>criação da terceira linha com 4 colunas + 4 colunas + 4 colunas</h5>
+    <div class="row card-panel teal lighten 12">
+        <div class="col s4 center">1</div>
+        <div class="col s4 center">2</div>
+        <div class="col s4 center">3</div>
+    </div>
+    <br>
+
+    <h5>Criação da quarta linha com 6 colunas + 6 colunas</h5>
+    <div class="row card-panel red lighten 2">
+        <div class="col s6 center">1</div>
+        <div class="col s6 center">2</div>
+    </div>
+    <br>
+
+    <h5>Criação da 6 linha com 12 colunas</h5>
+    <div class="row card-panel blue lighten 5">
+        <div class="col s12 center">1</div> <!--right-align alinha a direita-->
+                                                 <!--ligth alinha a esquerda-->
+    </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row card-panel green">
+            <h5 class="center">Componentes Materialize</h5>
+            <div class="col s4 light">
+                <p class="white-text">- Badges (Notificação);<br>-Buttons (Botões);<br>-Breadcrumbs (Rastreamento);<br>-Cards (Cartões);<br>-Chips (Bloco de informações);</p>
+            </div>
+
+            <div class="col s4 light">
+                <p class="white-text">- Collections (agruoamento de objetos);<br>- Footers (Rodapé);<br>- Forms (Formulários);<br>- Icons (Icones);</p>
+            </div>
+
+            <div class="col s4 light">
+                <p class="white-text">-Navbar (Barra de navegação);<br>- Pagination (Paginação);<br>- Preloader (Barra de progresso);<br>- Tables (Tabelas);</p>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>

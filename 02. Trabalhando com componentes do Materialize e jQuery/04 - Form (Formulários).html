@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form (Formulários)</title>
+
+    <!-- Importação Fonte Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Importação materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen, projection"> <!--Media siguinifica a midia que vai rodar-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen, projection">     <!--screen = Celular / projection = Projetor-->
+                                                                                                                   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação da biblioteca jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Importação materialize JS na tag body, carrega mais rápido -->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <div class="container"> <!--Inicio da container-->
+
+        <h4>Formulário de Cadastros</h4>
+
+        <div class="row">
+
+            <form class="col s4"> <!--Inicio do formulário-->
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">accont_circle</i>
+                        <input placeholder="informe seu nome" id="nome" type="text" class="validate"> <!--type = significa que a tag label ficara nesta mesma linha-->
+                        <label for="nome">Nome</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input placeholder="informe seu telefone" id="telefone" type="text" class="validate">
+                        <label for="telefone">Telefone</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">vpn_key</i>
+                        <input placeholder="informe sua senha" id="password" type="password" class="validate"> <!--Só input id, da outro visual-->
+                        <label for="password">Senha</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">E-mail</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <input type="checkbox" id="test5">
+                        <label for="test5">Receber informativos</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-field col s12">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="submit" class="btn blue-grey">Cancelar</button>
+                    </div>
+
+                </div>
+
+            </form> <!--Fim do formulário-->
+
+        </div>
+
+    </div> <!--Fim da container-->
+
+
+</body>
+</html>

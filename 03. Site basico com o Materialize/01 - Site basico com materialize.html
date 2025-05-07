@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navegação</title>
+
+    <!-- Importação Fonte Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Importação materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen, projection"> <!--Media siguinifica a midia que vai rodar-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="projection, screen"> <!--screen = Celular / projection = Projetor-->
+
+    <!-- Importação de ícones personalizados -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialdesignicons.css" media="all"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" media="all">
+                                   
+    <!-- Otimização para mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+            $('.carousel').carousel('next');
+            $('.carousel').carousel('next', 3); //Move as paginas 3 vezes
+        
+           // slides anteriores
+           $('.caousel').carousel('prev');
+           $('carousel').carousel('prev', 4)
+
+           //definindo o slide
+           $('.carousel').carousel('set', 4);
+           $('.carousel.carousel-slider').carousel({fillWidht: true});
+        });
+
+    </script>
+    
+</head>=
+<body>
+
+    <!-- Importação materialize JS na tag body, carrega mais rápido -->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+                                 <!-- BARRA DE NAVEGAÇÃO -->
+
+    <nav class="navbar-fixed" role=""> <!--Início da barra de navegação-->
+
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Nome da página</a> <!--Criação do nome da página-->
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">   Sobre    </a></li>
+                <li><a href="#">  Serviços  </a></li>
+                <li><a href="#">Fale conosco</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">   Sobre    </a></li>
+                <li><a href="#">  Serviços  </a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> 
+
+        </div><!--Fim da div da barra de navegação-->
+
+    </nav><!--Fim da barra de navegação-->
+  
+
+                                         <!-- CAROUSEL -->
+
+
+    <div class="carousel" data-indicators="false">
+
+        <div class="carousel">
+            <a class="carousel-item" href="#"><img src="imag/Qpreto.JPG"></a>
+            <a class="carousel-item" href="#"><img src="imag/Qverm.JPG" ></a> 
+            <a class="carousel-item" href="#"><img src="imag/Qamar.JPG" ></a>
+            <a class="carousel-item" href="#"><img src="imag/Qazul.JPG" ></a>
+            <a class="carousel-item" href="#"><img src="imag/Qroxo.JPG" ></a>
+        </div>
+
+    </div>
+
+
+                                         <!-- CARTÃO (CARD) -->
+
+
+    <div class="card blue-grey"> <!--Criando um cartão e dando a cor-->
+
+        <div class="card-content white-text">
+            <span class="card-title center">Isso é um Card</span>
+            <p clas="justify">
+                Após o menu, na parte superior da página, se encontra o efeito carousel do Materialize, apresentando uma trsnsição de imagens quando é clicado com o mouse sobre uma imagem.</p>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+    
+        <div class="col s6 offset-m6">
+            <p>Também é possivel "segurar" a imagem com o mause e arrastar para os lados que as imagens serão trocadas. É possivel incluir links nas imagens e redirecionar para uma outra página.</p>
+            <P>Aqui alinhamos o texto á direita dentro de uma coluna de tamanho 6</P>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col s6">
+            <p>Aqui já colocamos o texto alinhado á esquerda. Perceba que a diagramação pode ser elaborada de acordo com as suas necessidades. Também é possível incluir imagens alinhadas ao texto.</p>
+        </div>
+
+    </div>
+
+
+                                              <!-- BLOCO DE ANUNCIOS (SECTION) -->
+
+
+
+    <div class="section">
+
+        <div class="row">
+
+            <div class="col s12 m4">
+
+                <div class="icon-block">
+                    <h2 class="center pink-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Ícones coloridos</h5>
+                    <p class="light center">Você pode criar blocos com ícones do próprio Materialize, associando uma imagem com um texto descritivo.</p>
+                </div>
+
+            </div>
+
+            <div class="col s12 m4">
+
+                <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Outro bloco</h5>
+                    <p class="light center">Use a criatividade para atrair o usuário. Por que não colocar uma imagem aqui?</p>
+                </div>
+
+            </div>
+
+            <div class="col s12 m4">
+
+                <div class="icon-block">
+                    <h2 class="center black-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Mais um Bloco</h5>
+                    <p class="light center">Esse recurso é igual ao do Bootstrap, alterando apenas as classes</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>                                          
+
+
+                                                   <!-- RODAPÉ (FOOTER) -->
+
+
+    <footer class="page-footer black"> <!--Criação do rodapé-->
+
+        <div class="container"> <!--Container para o rodapé-->
+
+            <div class="row">
+
+                <div class="col l6">
+                    <h5 class="white-text">Exemplo de rodapé</h5>
+                    <p class="white-text">Aqui você pode colocar informações sobre a empresa ou então outras informações relevantes</p>
+                </div>
+                
+                <div class="col l3 s12">
+                    <h5 class="white-text">Links</h5>
+
+                    <ul>
+                        <li><a class="white-text" href="#!"> Faceboock </a></li> <!--Obs: Aqui foi adicionado o <a class="" pelo motivo de haver links-->
+                        <li><a class="white-text" href="#!"> Linkedin  </a></li> <!--caso não fosse ter links, seria só <li class=""-->
+                        <li><a class="white-text" href="#!">  Github   </a></li>
+                        <li><a class="white-text" href="#!">Google Plus</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col l3 s12">
+                    <h5 class="white-text">Contato</h5>
+
+                    <ul>
+                        <li class="white-text">  fale@email.com  </li>
+                        <li class="white-text">(+55) 11 5555-5555</li>
+                    </ul>
+
+                </div>
+
+        </div> <!--Fim do container do rodapé-->
+
+        <div class="footer-copyright">
+
+            <div class="container">
+                Baseado no template oficial do <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+
+        </div>
+
+    </footer> <!--Fim do rodapé-->
+
+</body>
+</html>
